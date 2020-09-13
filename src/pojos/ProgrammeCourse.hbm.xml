@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 22, 2019 10:32:28 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.ProgrammeCourse" table="programme_course" catalog="gpacal" optimistic-lock="version">
+        <id name="pcId" type="java.lang.Integer">
+            <column name="pc_id" />
+            <generator class="identity" />
+        </id>
+        <property name="programmeId" type="int">
+            <column name="Programme_id" not-null="true" />
+        </property>
+        <property name="courseCode" type="string">
+            <column name="course_code" length="10" not-null="true" />
+        </property>
+        <property name="courseType" type="string">
+            <column name="course_type" length="25" not-null="true" />
+        </property>
+        <property name="taketoGpa" type="string">
+            <column name="taketoGpa" length="5" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

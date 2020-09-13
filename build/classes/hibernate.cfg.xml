@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/gpacal?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="pojos/Gpaformula.hbm.xml"/>
+    <mapping resource="pojos/Student.hbm.xml"/>
+    <mapping resource="pojos/Admin.hbm.xml"/>
+    <mapping resource="pojos/ProgrammeCourse.hbm.xml"/>
+    <mapping resource="pojos/Lecturer.hbm.xml"/>
+    <mapping resource="pojos/Programme.hbm.xml"/>
+    <mapping resource="pojos/Course.hbm.xml"/>
+    <mapping resource="pojos/Studentdegree.hbm.xml"/>
+    <mapping resource="pojos/StudentCourse.hbm.xml"/>
+    <mapping resource="pojos/Login.hbm.xml"/>
+    <mapping resource="pojos/Marks.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

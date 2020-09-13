@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="gpacal"/>
+  <table-filter match-name="lecturer"/>
+  <table-filter match-name="programme"/>
+  <table-filter match-name="login"/>
+  <table-filter match-name="student_course"/>
+  <table-filter match-name="admin"/>
+  <table-filter match-name="studentdegree"/>
+  <table-filter match-name="gpaformula"/>
+  <table-filter match-name="marks"/>
+  <table-filter match-name="programme_course"/>
+  <table-filter match-name="course"/>
+  <table-filter match-name="student"/>
+</hibernate-reverse-engineering>
